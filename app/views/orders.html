@@ -1,0 +1,12 @@
+<h1 class="heading"> Orders: </h1>
+<div ng-repeat="order in orders">
+	Order#: {{order._id}}
+	<div ng-repeat="item in order">
+		<div ng-repeat="obj in item track by $index">
+			{{obj.name}}
+		</div>
+	</div>
+	<a class="btn btn-xs btn-success" ng-click="completeOrder(order._id)">OK</a>
+	<br><br>
+</div>
+<br>

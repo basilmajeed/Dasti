@@ -1,0 +1,27 @@
+<div class="heading">
+  <table width="100%" border="0" cellpadding="0" style="margin-top:50px">
+  <tr>
+    <td style="padding-top:0px"><center><img src="../images/khanaybaz.png" width="681" height="134" /></center></td>
+  </tr>
+  <tr>
+    <td><center><h1><b> BY </b></h1><center></td>
+  </tr>
+  <tr>
+    <td><center><img src="../images/logo.png" width="284" height="150" /></center></td>
+  </tr>
+  </table>
+
+  <div ng-hide="username == 'admin' && password == 'admin'">
+	  <center><p><input class="black" type="text" ng-model="username" placeholder="Username"></p></center>
+	  <center><p><input class="black" type="password" ng-model="password" placeholder="Password"></p></center>
+  </div>
+
+  <div ng-show="username == 'admin'">
+  	<div ng-show="password == 'admin'">
+	  <center><p class="lead"> Welcome back, <b>admin.<b></p></center>
+	  <center><a class="btn btn-lg btn-warning" ng-href="#!/orders">View Orders</a>
+	  &nbsp;
+	  <a class="btn btn-lg btn-warning" ng-href="#!/edit_menu">Edit Menu</a></center>
+	</div>
+  </div>
+</div>

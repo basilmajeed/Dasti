@@ -1,0 +1,12 @@
+<!-- <h1 class="heading"> MENU </h1>
+<p> (ID - NAME) </p>
+<div ng-repeat="item in menu">
+	<class="small" />{{item._id}} - {{item.name}}
+</div>
+<form>
+    Enter ID of the item you wish to delete: <input class="black" type="text" ng-model="id">
+    <a class="btn btn-xs btn-danger" ng-click="removeItem(id)">DELETE</a>
+</form> -->
+
+<p>Select the item you wish to delete from the menu: <select class="black" ng-model="item" ng-options="x.name for x in menu"></select>
+<a class="btn btn-xs btn-danger" ng-click="removeItem(item._id)">DELETE</a></p>

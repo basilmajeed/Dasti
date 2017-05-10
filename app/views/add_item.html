@@ -1,0 +1,6 @@
+<form>
+    <p>Enter name of the item you wish to add to the menu: <input class="black" type="text" ng-model="name"></p>
+    <p>Select the type of item you wish to add to the menu: <select class="black" ng-model="type" ng-options="x for x in types"></select></p>
+    <p>Enter price of the item you wish to add to the menu: <input class="black" type="text" ng-model="price"></p>
+    <a class="btn btn-md btn-success" ng-click="addItem(name,type,price,0)">ADD TO MENU</a>
+</form>
